@@ -4,13 +4,17 @@
 xy = input('Введите значение X Y через пробел: ').split()
 
 
-if int(xy[0]) > 0 and int(xy[1]) > 0:
-    res = 1
-elif int(xy[0]) < 0 and int(xy[1]) > 0:
-    res = 2
-elif int(xy[0]) < 0 and int(xy[1]) < 0:
-    res = 3
-else :
-    res = 4
+if int(xy[0]) != 0 and int(xy[1]) != 0:
+         if int(xy[0]) > 0 and int(xy[1]) > 0:
+            res = 1
+         elif int(xy[0]) < 0 and int(xy[1]) > 0:
+            res = 2
+         elif int(xy[0]) < 0 and int(xy[1]) < 0:
+            res = 3
+         else :
+            res = 4
+         print(f'Точка находится в {res} четверти плоскости')
 
-print(f'Точка находится в {res} четверти плоскости')
+else:
+    print('Координата точки не может быть равна 0')
+ 
