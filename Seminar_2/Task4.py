@@ -16,14 +16,13 @@ list = []
 for i in range(N):
     list.append(ListOfElem(N))
 
-def ProdOfElem(m, arr):
+def ProdEl(list, m):
     prod = 1
-    for m in arr:
-        prod = prod * m
+    for i in list[m]:
+        prod *= list[i]
     return prod
 
 
 
-
 print(f'Список из {N} элементов: {list} ')
-print(f'Произведение элементов: {format(ProdOfElem(M, list))} ')
+print(f'Произведение элементов: {format(ProdEl(list, M))} ')
