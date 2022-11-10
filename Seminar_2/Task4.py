@@ -4,7 +4,7 @@ from random import random
 
 
 N = int(input('Введите количество элементов: '))
-M = input('Введите позиции элементов через пробел: ').split()
+M1, M2 = list(map(int, input('Введите позиции элементов через пробел: ').split()))
 
 import random
 
@@ -16,13 +16,6 @@ list = []
 for i in range(N):
     list.append(ListOfElem(N))
 
-def ProdEl(list, m):
-    prod = 1
-    for i in list[m]:
-        prod *= list[i]
-    return prod
-
-
 
 print(f'Список из {N} элементов: {list} ')
-print(f'Произведение элементов: {format(ProdEl(list, M))} ')
+print(f'Произведение элементов: {list[M1] * list[M2]} ')
