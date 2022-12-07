@@ -1,3 +1,5 @@
+import csv
+
 name = None 
 lastName = None 
 phoneNumber = None
