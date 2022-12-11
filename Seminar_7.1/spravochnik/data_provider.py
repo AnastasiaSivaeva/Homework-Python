@@ -1,5 +1,6 @@
 import csv
 import os.path
+import logger
 
 spravochnik = []
 spravochnik_file_name = ''
