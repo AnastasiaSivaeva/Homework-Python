@@ -128,7 +128,8 @@ def menu():
         elif n == 8:
             logger.log(n)
             print('Спасибо за работу!')
-        break
+            break
+
 
 def сheck(arg):
     while arg.isdigit() != True:
